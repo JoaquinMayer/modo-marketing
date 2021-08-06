@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Marketgin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script async defer src="./main.js"></script>
+</head>
+
+<body class="position-relative">
+    <header class="d-flex flex-column mm-header">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler mm-button-menu" id="mm-open-menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="/img/menu-icon.png" alt="logo modo marketing"
+                        srcset="/img/menu-icon.png 1x, /img/menu-icon@2x.png 2x" class="d-inline-block align-text-top">
+                </button>
+                <a class="navbar-brand m-0 p-0" href="#">
+                    <img src="/img/logo.png" width="160" alt="logo modo marketing"
+                        srcset="/img/logo.png 1x, /img/logo@2x.png 2x" class="d-inline-block align-text-top img-fluid">
+                </a>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center mt-auto position-relative">
+            <img src="./img/raquel-diego.png" srcset="./img/raquel-diego.png 1x, ./img/raquel-diego@2x.png 2x"
+                alt="raquel y diego" class="img-fluid">
+            <div class="mm-card-player position-absolute bottom-0 d-flex align-items-center">
+                <p class="mb-0 pe-4">Escuchar <br> Podcast ahora</p>
+                <img src="./img/icon-play.png" class="mm-icon-play"
+                    srcset="./img/icon-play.png 1x, ./img/icon-play@2x.png 2x" alt="icono de play">
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <div class="mm-mobile-menu" id="mm-mobile-menu" style="display: none;">
+        <div class="mm-options-menu">
+            <ul class="list-unstyled">
+                <li class="mm-item-menu"><img id="mm-close-menu" src="./img/icon-close.png"
+                        srcset="./img/icon-close.png 1x, ./img/icon-close@2x.png 2x" alt="icono de cerrar"></li>
+                <li class="mm-item-menu"><a class="mm-item-menu-link" href="/">Inicio</a></li>
+                <li class="mm-item-menu"><a class="mm-item-menu-link" href="/episodios">Episodios</a></li>
+                <li class="mm-item-menu"><a class="mm-item-menu-link" href="/materiales">Materiales</a></li>
+                <li class="mm-item-menu"><a class="mm-item-menu-link" href="/articulos">Artículos</a></li>
+                <li>
+                    <div class="mm-card-player d-flex align-items-center justify-content-between mt-3">
+                        <p class="mb-0 pe-4">Escuchar <br> Podcast ahora</p>
+                        <img src="./img/icon-play.png" class="mm-icon-play"
+                            srcset="./img/icon-play.png 1x, ./img/icon-play@2x.png 2x" alt="icono de play">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
