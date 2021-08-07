@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modo Marketgin</title>
+    <title>Modo Marketing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -31,7 +32,7 @@
                 </a>
             </div>
         </nav>
-        <div class="d-flex justify-content-center mt-auto position-relative">
+        <div class="d-flex justify-content-center mt-5 position-relative">
             <img src="./img/raquel-diego.png" srcset="./img/raquel-diego.png 1x, ./img/raquel-diego@2x.png 2x"
                 alt="raquel y diego" class="img-fluid">
             <div class="mm-card-player position-absolute bottom-0 d-flex align-items-center">
@@ -41,7 +42,181 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container">
+
+        <section class="row mm-background-form">
+            <div class="col mt-3">
+                <h1 class="h1 my-3 text-primary mm-header-1">Dos perspectivas sobre el marketing, los negocios y la
+                    vida.</h1>
+                <div class="d-flex justify-content-center my-5">
+                    <img width="130" src="./img/switch.png" srcset="./img/switch.png 1x, ./img/switch@2x.png 2x"
+                        alt="switch modo marketing" class="img-fluid">
+                </div>
+                <div class="mx-3 mb-5">
+                    <h2 class="h2 text-secondary mm-header-2">¡Activa tu Modo Marketing!</h2>
+                    <p class="mm-text-1">
+                        Postulate aquí para participar en el poodcast y recibir una asesoría en vivo.
+                        Cuéntanos sobre tuempresa o proyecto, y sobre todo, qué te preocupa o quisieras mejorar.
+                    </p>
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control bg-light" id="nameInput"
+                                        placeholder="Escribe aquí tu nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control bg-light" id="emailInput"
+                                        placeholder="Escribe aquí tu email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="message" class="form-control bg-light" id="messageInput"
+                                        placeholder="Cuéntanos sobre tu negocio"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="mm-btn-submit btn btn-secondary w-100 text-uppercase rounded-pill border-0">Participar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col mx-3">
+                <h3 class="mm-header-3">Conoce a los expertos.</h3>
+                <p class="mm-text-1">¿Quienes son los hosts de Modo Marketing?</p>
+
+                <div class="card shadow border-0">
+                    <div class="card-body pb-0">
+                        <h4 class="mm-header-4">Raquel Oberlander</h4>
+                        <p class="mm-text-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem at
+                            voluptatibus quos tempore eaque illum saepe. Explicabo sequi quod quae tempora ut fugit
+                            sapiente, commodi, nemo quisquam quasi debitis!
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <img src="./img/linkedin-logo.png"
+                                    srcset="./img/linkedin-logo.png 1x, ./img/linkedin-logo@2x.png 2x"
+                                    alt="linkedin logo" class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="./img/raquel-oberlander.png"
+                                    srcset="./img/raquel-oberlander.png 1x, ./img/raquel-oberlander@2x.png 2x"
+                                    alt="raquel oberlander" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow border-0 mt-4">
+                    <div class="card-body pb-0">
+                        <h4 class="mm-header-4">Diego Levinsky</h4>
+                        <p class="mm-text-2">
+                            Creo estrategias de Marketing para start-ups tecnológicas. Mi trabajo consiste en alinear
+                            los trabajos de construcción de marca, implementación técnica y desarrollo de producto. De
+                            esa forma, es posible construir estrategias que aporten valor y sean rentables.
+                        </p>
+                        <div class="row">
+                            <div class="col d-flex align-items-center">
+                                <img src="./img/linkedin-logo.png"
+                                    srcset="./img/linkedin-logo.png 1x, ./img/linkedin-logo@2x.png 2x"
+                                    alt="linkedin logo" class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="./img/diego-levinsky.png"
+                                    srcset="./img/diego-levinsky.png 1x, ./img/diego-levinsky@2x.png 2x"
+                                    alt="diego levinsky" class="img-fluid mm-image-diego">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="row mt-5">
+            <div class="col mx-3">
+                <h3 class="mm-header-3">Los contenidos que buscabas.</h3>
+                <p class="mm-text-1">Descarga los contenidos que quieras ¡Son gratis!</p>
+
+                <div class="row">
+
+                    <div class="card shadow border-0 col col-12 mt-4">
+                        <div class="card-body justify-content-center d-flex flex-column py-4">
+                            <img src="./img/ebook-placeholder.png"
+                                srcset="./img/ebook-placeholder.png 1x, ./img/ebook-placeholder@2x.png 2x"
+                                alt="cover ebook" class="img-fluid mx-auto d-block">
+                            <p class="m-auto badge rounded-pill bg-danger fw-light text-uppercase my-2">Ebook</p>
+                            <h4 class="mm-header-ebook">Las 10 tendencias del consumidor post-pandemia.</h4>
+                            <p class="mm-text-ebook">Por Raquel Oberlander.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" name="name" class="form-control bg-light"
+                                        placeholder="Escribe aquí tu email">
+                                </div>
+                                <button type="submit"
+                                    class="mm-btn-submit-ebook btn btn-dark px-5 m-auto d-block text-uppercase border-0">¡Lo
+                                    quiero!</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card shadow border-0 col col-12 mt-4 py-4">
+                        <div class="card-body justify-content-center d-flex flex-column">
+                            <img src="./img/ebook-placeholder.png"
+                                srcset="./img/ebook-placeholder.png 1x, ./img/ebook-placeholder@2x.png 2x"
+                                alt="cover ebook" class="img-fluid mx-auto d-block">
+                            <p class="m-auto badge rounded-pill bg-danger fw-light text-uppercase my-2">Ebook</p>
+                            <h4 class="mm-header-ebook">Las 10 tendencias del consumidor post-pandemia.</h4>
+                            <p class="mm-text-ebook">Por Raquel Oberlander.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" name="name" class="form-control bg-light"
+                                        placeholder="Escribe aquí tu email">
+                                </div>
+                                <button type="submit"
+                                    class="mm-btn-submit-ebook btn btn-dark px-5 m-auto d-block text-uppercase border-0">¡Lo
+                                    quiero!</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="row mt-5">
+            <div class="col mx-3">
+                <h3 class="mm-header-3">Sé parte de la reflexión.</h3>
+                <p class="mm-text-1">Encuentra ideas e insigths en nuestro Blog.</p>
+
+                <div class="row">
+
+                    <div class="card shadow border-0 col col-12 mt-4 pt-3">
+                        <img src="./img/post-placeholder.jpg"
+                            srcset="./img/post-placeholder.jpg 1x, ./img/post-placeholder@2x.jpg 2x" alt="cover ebook"
+                            class="card-img-top">
+                        <div class="card-body justify-content-center py-4">
+                            <h4 class="mm-header-post">Los cambios y tendencias de la publicidad con iOS 14.5</h4>
+                            <p class="mm-text-post">Hace algunos días, Apple anunció que una nueva versión del sistema
+                                operativo iOS será distribuída a todos los iPhones y iPads. Sin embargo, est…</p>
+
+                            <a class="mm-btn-submit-post btn btn-dark py-1 px-3 rounded-pill border-0">Leer
+                                articulo
+                                completo <i class="bi-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
     <footer>
