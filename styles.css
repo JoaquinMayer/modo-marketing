@@ -38,6 +38,12 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-width: 992px) {
+  .mm-header {
+    background-image: url("./img/bg-header-desktop.png");
+  }
+}
+
 .mm-button-menu {
   background-color: #fff;
   padding-top: 12px;
@@ -144,15 +150,15 @@ body {
 @media (min-width: 768px) {
   .mm-image-raquel {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: scale(1.5) translateY(-41px);
+    right: -50px;
+    bottom: -41px;
+    transform: translateY(-41px);
   }
   .mm-image-diego {
     position: absolute;
     right: 0;
-    bottom: 0;
-    transform: scale(1.5) translateY(-7px);
+    bottom: -70px;
+    transform: translateY(-7px);
   }
 }
 
@@ -162,6 +168,13 @@ body {
     left: 35px;
     transform: scale(1.5);
     height: 185px;
+  }
+
+  .mm-form-content {
+    width: 65% !important;
+  }
+  .mm-btn-submit-ebook {
+    width: 35% !important;
   }
 }
 
@@ -240,4 +253,38 @@ body {
 .mm-font-display-bold {
   font-family: SFProDisplay-Bold;
   font-weight: bold;
+}
+
+.mm-button-menu-desktop.active {
+  background: linear-gradient(
+    to right,
+    #d16e45 0%,
+    #c24238 11%,
+    #ba3537 23%,
+    #b03a53 37%,
+    #825099 59%,
+    #685497 69%,
+    #405795 88%,
+    #213a5f 100%
+  ) !important;
+  color: white;
+}
+.mm-button-menu-desktop {
+  color: #606060;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: SFProDisplay-Bold;
+  border-radius: 8px;
+}
+
+.mm-button-menu-desktop:hover {
+  color: #606060;
+}
+
+.mm-button-menu-desktop.active:hover {
+  color: white;
+}
+
+.mm-menu {
+  border-radius: 8px;
 }

@@ -26,11 +26,11 @@
   </head>
 
   <body class="position-relative">
-    <header class="d-flex flex-column mm-header">
+    <header class="d-flex flex-column mm-header px-lg-4">
       <nav class="navbar navbar-light">
-        <div class="container-fluid">
+        <div class="container-fluid p-lg-0">
           <button
-            class="navbar-toggler mm-button-menu"
+            class="navbar-toggler mm-button-menu d-lg-none"
             id="mm-open-menu"
             type="button"
             data-bs-toggle="collapse"
@@ -57,7 +57,14 @@
           </a>
         </div>
       </nav>
-      <div class="d-flex justify-content-center mt-5 position-relative">
+      <div
+        class="
+          d-flex
+          justify-content-center justify-content-lg-end
+          mt-5
+          position-relative
+        "
+      >
         <img
           src="./img/raquel-diego.png"
           srcset="./img/raquel-diego.png 1x, ./img/raquel-diego@2x.png 2x"
@@ -71,6 +78,7 @@
             bottom-0
             d-flex
             align-items-center
+            d-lg-none
           "
         >
           <p class="mb-0 pe-4 mm-font-display-bold">
@@ -83,6 +91,64 @@
             srcset="./img/icon-play.png 1x, ./img/icon-play@2x.png 2x"
             alt="icono de play"
           />
+        </div>
+        <div
+          id="mm-nav"
+          class="w-100 position-absolute bottom-0 d-none d-lg-block"
+        >
+          <nav>
+            <ul class="list-unstyled bg-white d-flex p-2 mm-menu">
+              <li class="col">
+                <a
+                  href="/"
+                  class="
+                    text-center text-uppercase
+                    w-100
+                    d-block
+                    mm-button-menu-desktop
+                    active
+                  "
+                  >Inicio</a
+                >
+              </li>
+              <li class="col">
+                <a
+                  href="/episodios"
+                  class="
+                    text-center text-uppercase
+                    w-100
+                    d-block
+                    mm-button-menu-desktop
+                  "
+                  >Episodios</a
+                >
+              </li>
+              <li class="col">
+                <a
+                  href="/materiales"
+                  class="
+                    text-center text-uppercase
+                    w-100
+                    d-block
+                    mm-button-menu-desktop
+                  "
+                  >Materiales</a
+                >
+              </li>
+              <li class="col">
+                <a
+                  href="/articulos"
+                  class="
+                    text-center text-uppercase
+                    w-100
+                    d-block
+                    mm-button-menu-desktop
+                  "
+                  >Articulos</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -288,7 +354,7 @@
 
             <div class="bg-light shadow border-0 col col-12 mt-4 mt-md-5 p-3">
               <div class="row position-relative">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-lg-3">
                   <img
                     src="./img/ebook-placeholder.png"
                     srcset="
@@ -299,7 +365,7 @@
                     class="mx-auto d-block mm-image-ebook"
                   />
                 </div>
-                <div class="col col-12 col-md-8">
+                <div class="col col-12 col-md-8 col-lg-9">
                   <div class="w-100 d-block m-auto text-center text-md-start">
                     <p
                       class="
@@ -320,15 +386,13 @@
                     Las 10 tendencias del consumidor post-pandemia.
                   </h4>
                   <p class="mm-text-ebook">Por Raquel Oberlander.</p>
-                  <form>
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        name="name"
-                        class="form-control bg-light"
-                        placeholder="Escribe aquí tu email"
-                      />
-                    </div>
+                  <form class="d-lg-flex">
+                    <input
+                      type="email"
+                      name="name"
+                      class="form-control bg-light mm-form-content mb-3 mb-lg-0"
+                      placeholder="Escribe aquí tu email"
+                    />
                     <button
                       type="submit"
                       class="
@@ -351,104 +415,118 @@
             <a
               href=""
               class="
-                text-uppercase
                 btn
-                mm-btn-see-more
-                m-auto
+                col-12 col-lg-4 col-md-6
                 d-block
-                mx-3
+                m-auto
+                mm-btn-see-more
+                mx-3 mx-auto
                 my-5
+                text-uppercase
               "
               >Ver más materiales</a
             >
           </div>
         </section>
       </div>
+      <div class="container-fluid container-md">
+        <section class="row mt-5">
+          <div class="col mx-3">
+            <h3 class="mm-header-3">Sé parte de la reflexión.</h3>
+            <p class="mm-text-1">Encuentra ideas e insigths en nuestro Blog.</p>
 
-      <section class="row mt-5">
-        <div class="col mx-3">
-          <h3 class="mm-header-3">Sé parte de la reflexión.</h3>
-          <p class="mm-text-1">Encuentra ideas e insigths en nuestro Blog.</p>
-
-          <div class="row">
-            <div class="card shadow border-0 col col-12 col-md-6 mt-4 pt-3">
-              <img
-                src="./img/post-placeholder.jpg"
-                srcset="
-                  ./img/post-placeholder.jpg    1x,
-                  ./img/post-placeholder@2x.jpg 2x
-                "
-                alt="cover ebook"
-                class="card-img-top"
-              />
-              <div class="card-body justify-content-center py-4">
-                <h4 class="mm-header-post">
-                  Los cambios y tendencias de la publicidad con iOS 14.5
-                </h4>
-                <p class="mm-text-post">
-                  Hace algunos días, Apple anunció que una nueva versión del
-                  sistema operativo iOS será distribuída a todos los iPhones y
-                  iPads. Sin embargo, est…
-                </p>
-                <div class="d-flex justify-content-end">
-                  <a
-                    class="
-                      mm-btn-submit-post
-                      btn btn-dark
-                      py-1
-                      px-3
-                      rounded-pill
-                      border-0
+            <div class="row">
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 mt-4 pt-3">
+                  <img
+                    src="./img/post-placeholder.jpg"
+                    srcset="
+                      ./img/post-placeholder.jpg    1x,
+                      ./img/post-placeholder@2x.jpg 2x
                     "
-                    >Leer articulo completo <i class="bi-chevron-right"></i
-                  ></a>
+                    alt="cover ebook"
+                    class="card-img-top p-3"
+                  />
+                  <div class="card-body justify-content-center py-4">
+                    <h4 class="mm-header-post">
+                      Los cambios y tendencias de la publicidad con iOS 14.5
+                    </h4>
+                    <p class="mm-text-post">
+                      Hace algunos días, Apple anunció que una nueva versión del
+                      sistema operativo iOS será distribuída a todos los iPhones
+                      y iPads. Sin embargo, est…
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a
+                        class="
+                          mm-btn-submit-post
+                          btn btn-dark
+                          py-1
+                          px-3
+                          rounded-pill
+                          border-0
+                        "
+                        >Leer articulo completo <i class="bi-chevron-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="card shadow border-0 mt-4 pt-3">
+                  <img
+                    src="./img/post-placeholder.jpg"
+                    srcset="
+                      ./img/post-placeholder.jpg    1x,
+                      ./img/post-placeholder@2x.jpg 2x
+                    "
+                    alt="cover ebook"
+                    class="card-img-top p-3"
+                  />
+                  <div class="card-body justify-content-center py-4">
+                    <h4 class="mm-header-post">
+                      Los cambios y tendencias de la publicidad con iOS 14.5
+                    </h4>
+                    <p class="mm-text-post">
+                      Hace algunos días, Apple anunció que una nueva versión del
+                      sistema operativo iOS será distribuída a todos los iPhones
+                      y iPads. Sin embargo, est…
+                    </p>
+                    <div class="d-flex justify-content-end">
+                      <a
+                        class="
+                          mm-btn-submit-post
+                          btn btn-dark
+                          py-1
+                          px-3
+                          rounded-pill
+                          border-0
+                        "
+                        >Leer articulo completo <i class="bi-chevron-right"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card shadow border-0 col col-12 mt-4 pt-3 col-md-6">
-              <img
-                src="./img/post-placeholder.jpg"
-                srcset="
-                  ./img/post-placeholder.jpg    1x,
-                  ./img/post-placeholder@2x.jpg 2x
-                "
-                alt="cover ebook"
-                class="card-img-top"
-              />
-              <div class="card-body justify-content-center py-4">
-                <h4 class="mm-header-post">
-                  Los cambios y tendencias de la publicidad con iOS 14.5
-                </h4>
-                <p class="mm-text-post">
-                  Hace algunos días, Apple anunció que una nueva versión del
-                  sistema operativo iOS será distribuída a todos los iPhones y
-                  iPads. Sin embargo, est…
-                </p>
-                <div class="d-flex justify-content-end">
-                  <a
-                    class="
-                      mm-btn-submit-post
-                      btn btn-dark
-                      py-1
-                      px-3
-                      rounded-pill
-                      border-0
-                    "
-                    >Leer articulo completo <i class="bi-chevron-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
+            <a
+              href=""
+              class="
+                btn
+                col-12 col-lg-4 col-md-6
+                d-block
+                m-auto
+                mm-btn-see-more
+                mx-3 mx-auto
+                my-5
+                text-uppercase
+              "
+              >Ver más artículos</a
+            >
           </div>
-
-          <a
-            href=""
-            class="text-uppercase btn mm-btn-see-more m-auto d-block mx-3 my-5"
-            >Ver más artículos</a
-          >
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="container-fluid mm-footer p-4">
