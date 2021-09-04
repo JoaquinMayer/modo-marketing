@@ -226,6 +226,10 @@ body {
   font-size: 1.5em;
 }
 
+.mm-btn-see-more:hover {
+  color: white;
+}
+
 .mm-header-post {
   font-family: SFProDisplay-Heavy;
   font-size: 1.5em;
