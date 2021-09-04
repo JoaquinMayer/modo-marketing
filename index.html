@@ -26,7 +26,7 @@
   </head>
 
   <body class="position-relative">
-    <header class="d-flex flex-column mm-header px-lg-4">
+    <header class="d-flex flex-column mm-header px-lg-4 mm-h-800 pt-lg-5">
       <nav class="navbar navbar-light">
         <div class="container-fluid p-lg-0">
           <button
@@ -63,13 +63,23 @@
           justify-content-center justify-content-lg-end
           mt-5
           position-relative
+          mm-h-800
         "
       >
         <img
           src="./img/raquel-diego.png"
           srcset="./img/raquel-diego.png 1x, ./img/raquel-diego@2x.png 2x"
           alt="raquel y diego"
-          class="img-fluid"
+          class="img-fluid d-lg-none"
+        />
+        <img
+          src="./img/raquel-diego-desktop.png"
+          srcset="
+            ./img/raquel-diego-desktop.png    1x,
+            ./img/raquel-diego-desktop@2x.png 2x
+          "
+          alt="raquel y diego"
+          class="img-fluid d-none d-lg-block mm-raquel-diego"
         />
         <div
           class="
@@ -94,9 +104,54 @@
         </div>
         <div
           id="mm-nav"
-          class="w-100 position-absolute bottom-0 d-none d-lg-block"
+          class="
+            bottom-0
+            d-lg-flex d-none
+            flex-column
+            h-100
+            position-absolute
+            w-100
+            justify-content-between
+          "
         >
-          <nav>
+          <div class="col d-flex align-items-center">
+            <h1 class="col-lg-6 mm-header-lg-1">
+              Dos perspectivas sobre el <br />marketing, los negocios y la vida.
+            </h1>
+          </div>
+          <div class="col">
+            <div class="card col-lg-6 col-xl-4 mm-card-podcast">
+              <div class="card-header d-flex justify-content-between bg-white">
+                <p class="m-0">PODCAST // ÚLTIMO EPISODIO</p>
+                <a href="" class="mm-link-podcast">Ver todos los episodios</a>
+              </div>
+              <div class="card-body d-flex justify-content-between">
+                <div class="">
+                  <img src="./img/cover-podcast.jpg" alt="" srcset="" />
+                </div>
+                <div class="ms-2">
+                  <h3 class="card-text mm-title-podcast">
+                    El marketing ya no es lo que era ⎢ MODO MARKETING Ep. 1
+                  </h3>
+                  <a
+                    href="#"
+                    class="
+                      btn
+                      rounded-pill
+                      d-inline-flex
+                      align-items-center
+                      justify-content-start
+                      pe-3
+                      bg-green
+                    "
+                    ><img src="./img/spotify-icon.png" alt="" class="me-2" />
+                    Escuchar Ahora</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="w-100">
             <ul class="list-unstyled bg-white d-flex p-2 mm-menu">
               <li class="col">
                 <a
@@ -155,7 +210,7 @@
     <main class="container-fluid">
       <section class="row mm-background-form">
         <div class="col mt-3">
-          <h1 class="h1 my-3 text-primary mm-header-1 d-md-none">
+          <h1 class="h1 my-3 text-primary mm-header-1 d-lg-none">
             Dos perspectivas sobre el marketing, los negocios y la vida.
           </h1>
           <div class="d-flex justify-content-center my-5">
@@ -204,6 +259,7 @@
                       class="form-control bg-light"
                       id="messageInput"
                       placeholder="Cuéntanos sobre tu negocio"
+                      rows="6"
                     ></textarea>
                   </div>
                   <input
@@ -226,123 +282,125 @@
         </div>
       </section>
 
-      <div class="container-md">
-        <section class="row">
-          <div class="col mx-3">
-            <h3 class="mm-header-3 text-md-center mt-md-5">
-              Conoce a los expertos.
-            </h3>
-            <p class="mm-text-1 text-md-center mb-md-5">
-              ¿Quienes son los hosts de Modo Marketing?
-            </p>
+      <section class="mm-background-conoce pb-lg-5 mb-lg-5">
+        <div class="container-md">
+          <section class="row">
+            <div class="col mx-3">
+              <h3 class="mm-header-3 text-md-center mt-md-5">
+                Conoce a los expertos.
+              </h3>
+              <p class="mm-text-1 text-md-center mb-md-5">
+                ¿Quienes son los hosts de Modo Marketing?
+              </p>
 
-            <div class="card shadow border-0 mt-5">
-              <div class="card-body pb-0 row">
-                <div class="col col-12 col-md-8 p-md-4">
-                  <h4 class="mm-header-4">
-                    Raquel <br class="d-none d-md-block" />Oberlander
-                  </h4>
-                  <p class="mm-text-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum voluptatem at voluptatibus quos tempore eaque
-                    illum saepe. Explicabo sequi quod quae tempora ut fugit
-                    sapiente, commodi, nemo quisquam quasi debitis!
-                  </p>
-                </div>
-                <div class="row col col-12 col-md-4">
-                  <div class="col col-6 col-md-4 col-lg-4">
-                    <img
-                      src="./img/linkedin-logo.png"
-                      srcset="
-                        ./img/linkedin-logo.png    1x,
-                        ./img/linkedin-logo@2x.png 2x
-                      "
-                      alt="linkedin logo"
-                      class="img-fluid"
-                    />
+              <div class="card shadow border-0 mt-5">
+                <div class="card-body pb-0 row">
+                  <div class="col col-12 col-md-8 p-md-4">
+                    <h4 class="mm-header-4">
+                      Raquel <br class="d-none d-md-block" />Oberlander
+                    </h4>
+                    <p class="mm-text-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum voluptatem at voluptatibus quos tempore eaque
+                      illum saepe. Explicabo sequi quod quae tempora ut fugit
+                      sapiente, commodi, nemo quisquam quasi debitis!
+                    </p>
                   </div>
-                  <div class="col col-6 col-md-8 col-lg-8 position-relative">
-                    <picture>
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./img/raquel-oberlander-mobile.png    1x,
-                          ./img/raquel-oberlander-mobile@2x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./img/raquel-oberlander.png    1x,
-                          ./img/raquel-oberlander@2x.png 2x
-                        "
-                      />
+                  <div class="row col col-12 col-md-4">
+                    <div class="col col-6 col-md-4 col-lg-4">
                       <img
-                        src="./img/raquel-oberlander.png"
-                        alt="raquel oberlander"
-                        class="mm-image-raquel"
+                        src="./img/linkedin-logo.png"
+                        srcset="
+                          ./img/linkedin-logo.png    1x,
+                          ./img/linkedin-logo@2x.png 2x
+                        "
+                        alt="linkedin logo"
+                        class="img-fluid"
                       />
-                    </picture>
+                    </div>
+                    <div class="col col-6 col-md-8 col-lg-8 position-relative">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            ./img/raquel-oberlander-mobile.png    1x,
+                            ./img/raquel-oberlander-mobile@2x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./img/raquel-oberlander.png    1x,
+                            ./img/raquel-oberlander@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="./img/raquel-oberlander.png"
+                          alt="raquel oberlander"
+                          class="mm-image-raquel"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow border-0 mt-5">
+                <div class="card-body pb-0 row">
+                  <div class="col col-12 col-md-8 p-md-4">
+                    <h4 class="mm-header-4">
+                      Diego <br class="d-none d-md-block" />Levinsky
+                    </h4>
+                    <p class="mm-text-2">
+                      Creo estrategias de Marketing para start-ups tecnológicas.
+                      Mi trabajo consiste en alinear los trabajos de
+                      construcción de marca, implementación técnica y desarrollo
+                      de producto. De esa forma, es posible construir
+                      estrategias que aporten valor y sean rentables.
+                    </p>
+                  </div>
+                  <div class="row col col-12 col-md-4">
+                    <div class="col col-6 col-md-4 col-lg-4">
+                      <img
+                        src="./img/linkedin-logo.png"
+                        srcset="
+                          ./img/linkedin-logo.png    1x,
+                          ./img/linkedin-logo@2x.png 2x
+                        "
+                        alt="linkedin logo"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col col-6 col-md-8 col-lg-8 position-relative">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            ./img/diego-levinsky-mobile.png    1x,
+                            ./img/diego-levinsky-mobile@2x.png 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./img/diego-levinsky.png    1x,
+                            ./img/diego-levinsky@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="./img/diego-levinsky.png"
+                          alt="raquel oberlander"
+                          class="mm-image-diego"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="card shadow border-0 mt-5">
-              <div class="card-body pb-0 row">
-                <div class="col col-12 col-md-8 p-md-4">
-                  <h4 class="mm-header-4">
-                    Diego <br class="d-none d-md-block" />Levinsky
-                  </h4>
-                  <p class="mm-text-2">
-                    Creo estrategias de Marketing para start-ups tecnológicas.
-                    Mi trabajo consiste en alinear los trabajos de construcción
-                    de marca, implementación técnica y desarrollo de producto.
-                    De esa forma, es posible construir estrategias que aporten
-                    valor y sean rentables.
-                  </p>
-                </div>
-                <div class="row col col-12 col-md-4">
-                  <div class="col col-6 col-md-4 col-lg-4">
-                    <img
-                      src="./img/linkedin-logo.png"
-                      srcset="
-                        ./img/linkedin-logo.png    1x,
-                        ./img/linkedin-logo@2x.png 2x
-                      "
-                      alt="linkedin logo"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col col-6 col-md-8 col-lg-8 position-relative">
-                    <picture>
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./img/diego-levinsky-mobile.png    1x,
-                          ./img/diego-levinsky-mobile@2x.png 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./img/diego-levinsky.png    1x,
-                          ./img/diego-levinsky@2x.png 2x
-                        "
-                      />
-                      <img
-                        src="./img/diego-levinsky.png"
-                        alt="raquel oberlander"
-                        class="mm-image-diego"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+          </section>
+        </div>
+      </section>
 
       <div class="container-fluid container-md">
         <section class="row mt-5">
@@ -530,14 +588,48 @@
     </main>
 
     <footer class="container-fluid mm-footer p-4">
-      <div class="row">
-        <div class="col">
-          <h5 class="mm-footer-title">MODO MARKETING</h5>
-          <p class="mm-footer-text">
-            Buscamos inspirar a nuestra audiencia con ideas e insigths
-            revolucionarios para que puedan aplicarlos en sus negocios o
-            emprendimientos.
-          </p>
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+            <div class="card mm-card-podcast">
+              <div class="card-header d-flex justify-content-between bg-white">
+                <p class="m-0">PODCAST // ÚLTIMO EPISODIO</p>
+                <a href="" class="mm-link-podcast">Ver todos los episodios</a>
+              </div>
+              <div class="card-body d-flex justify-content-between">
+                <div class="">
+                  <img src="./img/cover-podcast.jpg" alt="" srcset="" />
+                </div>
+                <div class="ms-2">
+                  <h3 class="card-text mm-title-podcast">
+                    El marketing ya no es lo que era ⎢ MODO MARKETING Ep. 1
+                  </h3>
+                  <a
+                    href="#"
+                    class="
+                      btn
+                      rounded-pill
+                      d-inline-flex
+                      align-items-center
+                      justify-content-start
+                      pe-3
+                      bg-green
+                    "
+                    ><img src="./img/spotify-icon.png" alt="" class="me-2" />
+                    Escuchar Ahora</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="mm-footer-title">MODO MARKETING</h5>
+            <p class="mm-footer-text">
+              Buscamos inspirar a nuestra audiencia con ideas e insigths
+              revolucionarios para que puedan aplicarlos en sus negocios o
+              emprendimientos.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

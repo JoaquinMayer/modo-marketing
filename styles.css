@@ -41,6 +41,8 @@ body {
 @media screen and (min-width: 992px) {
   .mm-header {
     background-image: url("./img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -176,6 +178,12 @@ body {
   .mm-btn-submit-ebook {
     width: 35% !important;
   }
+
+  .mm-background-conoce {
+    background-image: url("./img/background-conocenos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .mm-btn-submit-ebook,
@@ -268,12 +276,13 @@ body {
     #213a5f 100%
   ) !important;
   color: white;
+  font-family: SFProDisplay-Bold;
 }
 .mm-button-menu-desktop {
   color: #606060;
   text-decoration: none;
   font-size: 2em;
-  font-family: SFProDisplay-Bold;
+  font-family: SFProDisplay-Medium;
   border-radius: 8px;
 }
 
@@ -287,4 +296,41 @@ body {
 
 .mm-menu {
   border-radius: 8px;
+}
+
+.mm-header-lg-1 {
+  font-family: SFProDisplay-Heavy;
+  color: #2f2f2f;
+}
+
+.bg-green {
+  background-color: #1ed760;
+  border: 0;
+  color: white;
+}
+.bg-green:hover {
+  color: white;
+}
+
+.mm-title-podcast {
+  color: #606060;
+  font-family: SFProDisplay-Bold;
+  font-size: 1.5em;
+}
+
+.mm-card-podcast {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mm-link-podcast {
+  color: #845799;
+  text-decoration: none;
+}
+.mm-link-podcast:hover {
+  color: #845799;
+  text-decoration: none;
+}
+
+.mm-raquel-diego {
+  max-height: 70vh;
 }
