@@ -47,3 +47,79 @@ textarea {
   background: #f6f6f6;
   border: 1px solid #d7dbe0;
 }
+
+/* MODAL */
+.modal-header {
+  background: url("./img/bg-header.png");
+  align-items: flex-start;
+}
+
+.modal-header h5 {
+  font-family: SFProDisplay-Bold;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: left;
+  color: #273d5f;
+}
+
+.modal-header p {
+  font-family: SFProDisplay-Medium;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: #2f2f2f;
+}
+
+.bg-blue {
+  background: #485d95;
+}
+
+@media screen and (min-width: 992px) {
+  .border-right {
+    border-right: 1px solid #d7dbe0;
+  }
+}
+
+.modal-body h6 {
+  font-family: SFProDisplay-Bold;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+.modal-body p {
+  font-family: SFProDisplay-Semibold;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: left;
+  color: #606060;
+}
+
+.modal-body h4 {
+  font-family: SFProDisplay-Light;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #606060;
+}
+
+.mm-btn-get-ebook {
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  background: #845799;
+  font-family: SFProDisplay-Semibold;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.mm-label-get-ebook {
+  font-family: SFProDisplay-Semibold;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: left;
+  color: #606060;
+}
